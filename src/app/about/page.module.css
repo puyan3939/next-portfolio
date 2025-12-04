@@ -1,0 +1,24 @@
+/* この about-page クラスを持つ要素以下だけテーマを上書き */
+.aboutPage {
+  /* Tailwindを使う場合は @apply も使える */
+  @apply min-h-[100dvh] grid place-items-center;
+
+  /* 色の上書き（shadcnもこれを自動参照） */
+  --background: 210 40% 96%;         /* 薄いブルー */
+  --foreground: 240 10% 10%;         /* 濃い文字色 */
+  --primary: 280 80% 60%;            /* 紫系 */
+  --primary-foreground: 0 0% 100%;
+}
+
+.blue {
+  color: hsl(var(--primary));
+}
+
+.red {
+  background-color: hsl(20 80% 50%);
+}
+
+.bigtext{
+    font-size: 30vh;
+}
+
