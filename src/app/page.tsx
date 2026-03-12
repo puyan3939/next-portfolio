@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
 import { Box } from "@/components/ui/box"
+import Link  from "next/link"
 
 export default function Page() {
   return (
@@ -16,10 +17,17 @@ export default function Page() {
             ここに本文。色や角丸は <code>globals.css</code> の変数で一括調整できます。
           </CardContent>
         </Card>
-        <a href="/about">about</a>
+        
+        <Link href="/about">
          <Box>
-          <h1>あいうえお</h1>
+          about
          </Box>
+         </Link>
+          <Link href="/blog">
+         <Box>
+          blog
+         </Box>
+         </Link>
       </div>
     </main>
   )
